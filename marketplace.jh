@@ -1,0 +1,64 @@
+entity Marketplace {
+	id String required,
+	name String required
+}
+
+entity Consumer {
+	id String required,
+	name String required,
+    email String required
+}
+
+
+entity Producer {
+	id String required,
+	name String required,
+	email String required
+}
+
+entity Problem {
+	id String required,
+    name String required,
+    statement String required
+}
+
+
+entity Solution {
+	id String required,
+	name String required,
+    content String required,
+    rating String
+}
+
+
+entity Recipe {
+	id String required,
+    name String required
+}
+
+relationship OneToMany {
+	Marketplace{producer} to Producer,
+    
+    Marketplace{consumer} to Consumer,
+
+	Consumer{problem} to Problem,
+
+	Producer{solution} to Solution,
+    
+    Problem{solution} to Solution,
+    
+    Producer{recipe} to Recipe
+
+}
+
+// Set pagination options
+paginate Marketplace, Consumer, Producer, Problem, Solution with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

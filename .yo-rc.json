@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "SolutionsMarketplace",
+    "packageName": "io.github.jhipster.application",
+    "packageFolder": "io/github/jhipster/application",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.7.2",
+    "jwtSecretKey": "ODEwODA5MDdhNTYyZjVhODg2MDliMzQ0NTM1MWE2ZGQ0MjM4MWI0YzU4YzVmMDFkOWUyNDlhZDZjZWM0ZmZmZjVmNzE3MjJjOTA3NmYxZDlhNWY3MWYwY2M3ZWEzOTk5MjAxMDc2Y2RmMDU4M2RhMzA4NTk4ODIzZWYxMzk4MmM=",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "utish",
+  "repository-name": "solutions-marketplace"
+}

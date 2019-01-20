@@ -1,0 +1,48 @@
+{
+    "name": "Producer",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "marketplace",
+            "otherEntityName": "marketplace",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "solution",
+            "otherEntityName": "solution",
+            "otherEntityRelationshipName": "producer"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "recipe",
+            "otherEntityName": "recipe",
+            "otherEntityRelationshipName": "producer"
+        }
+    ],
+    "changelogDate": "20190120185750",
+    "entityTableName": "producer",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

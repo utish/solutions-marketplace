@@ -1,0 +1,35 @@
+{
+    "name": "Marketplace",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "producer",
+            "otherEntityName": "producer",
+            "otherEntityRelationshipName": "marketplace"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "consumer",
+            "otherEntityName": "consumer",
+            "otherEntityRelationshipName": "marketplace"
+        }
+    ],
+    "changelogDate": "20190120185748",
+    "entityTableName": "marketplace",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
